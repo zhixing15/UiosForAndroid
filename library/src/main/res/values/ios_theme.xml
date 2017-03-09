@@ -13,11 +13,18 @@
         <item name="editTextStyle">@style/Ios.Widget.EditText</item>
         <item name="editTextBackground">@drawable/ios_abc_edit_text_material</item>
         <item name="editTextColor">?android:attr/textColorPrimary</item><!--default ?android:attr/textColorPrimary-->
+        <!--Actionbar-->
+        <item name="actionBarSize">44dp</item>
+        <item name="actionBarStyle">@style/Ios.Widget.Light.ActionBar.Solid</item>
 
         <!--<item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>-->
         <!--<item name="android:windowExitAnimation">@anim/abc_popup_exit</item>-->
         <!--<item name="listDividerAlertDialog">@drawable/abc_list_divider_mtrl_alpha</item>-->
 
+    </style>
+
+    <style name="Ios.Widget.Light.ActionBar.Solid" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="displayOptions">showCustom|homeAsUp</item>
     </style>
 
     <style name="Ios.Animation.Activity" parent="android:Animation.Activity">
