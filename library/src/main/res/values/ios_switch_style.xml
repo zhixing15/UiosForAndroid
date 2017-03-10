@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Ios.Widget.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:track">@drawable/ios_abc_switch_track_mtrl_alpha</item>
+        <item name="android:thumb">@drawable/ios_abc_switch_thumb_material</item>
+        <item name="android:showText">false</item>
+    </style>
+</resources>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,46 +15,52 @@
 -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/buttonPanel"
-            style="?attr/buttonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fillViewport="true"
-            android:scrollIndicators="top|bottom">
+    android:id="@+id/buttonPanel"
+    style="?attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollIndicators="top|bottom">
 
     <android.support.v7.widget.ButtonBarLayout
-        android:showDividers="middle" android:divider="?attr/dividerVertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:divider="?attr/dividerVertical"
         android:gravity="bottom"
         android:layoutDirection="locale"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:showDividers="middle">
 
-        <Button android:layout_weight="1"
+        <Button
             android:id="@android:id/button3"
-            android:background="?attr/selectableItemBackground"
             style="?attr/buttonBarNeutralButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground" />
 
         <android.support.v4.widget.Space
             android:id="@+id/spacer"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
-        <Button android:layout_weight="1" android:background="?attr/selectableItemBackground"
+        <Button
             android:id="@android:id/button2"
             style="?attr/buttonBarNegativeButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground" />
 
-        <Button android:layout_weight="1" android:background="?attr/selectableItemBackground"
+        <Button
             android:id="@android:id/button1"
             style="?attr/buttonBarPositiveButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground" />
 
     </android.support.v7.widget.ButtonBarLayout>
 

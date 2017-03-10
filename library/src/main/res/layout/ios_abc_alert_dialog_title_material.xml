@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2015 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,10 +15,10 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/topPanel"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+    android:id="@+id/topPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <!-- If the client uses a customTitle, it will be added here. -->
 
@@ -49,7 +48,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:singleLine="true"
-            android:textAlignment="viewStart"/>
+            android:textAlignment="viewStart" />
 
     </LinearLayout>
 
@@ -57,5 +56,5 @@
         android:id="@+id/titleDividerNoCustom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ios_abc_dialog_title_divider_material"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 </LinearLayout>
