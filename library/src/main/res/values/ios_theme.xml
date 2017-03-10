@@ -2,13 +2,29 @@
 <resources>
     <!--白天主题-->
     <style name="IosTheme.Light" parent="Theme.AppCompat.Light">
+        <!--窗口动画样式-->
+        <item name="android:windowAnimationStyle">@style/Ios.Animation.Activity</item>
+        <!-- Text styles -->
+        <item name="android:textAppearanceMediumInverse">@style/Ios.TextAppearance.Medium.Inverse</item>
+        <!--弹出框-->
         <item name="alertDialogStyle">@style/Ios.AlertDialog.Light</item>
         <item name="alertDialogTheme">@style/Ios.Dialog.Alert</item>
+        <!--编辑框-->
+        <item name="editTextStyle">@style/Ios.Widget.EditText</item>
+        <item name="editTextBackground">@drawable/ios_abc_edit_text_material</item>
+        <item name="editTextColor">?android:attr/textColorPrimary</item><!--default ?android:attr/textColorPrimary-->
+        <!--Actionbar-->
+        <item name="actionBarSize">44dp</item>
+        <item name="actionBarStyle">@style/Ios.Widget.Light.ActionBar.Solid</item>
+
         <!--<item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>-->
         <!--<item name="android:windowExitAnimation">@anim/abc_popup_exit</item>-->
         <!--<item name="listDividerAlertDialog">@drawable/abc_list_divider_mtrl_alpha</item>-->
 
-        <item name="android:windowAnimationStyle">@style/Ios.Animation.Activity</item>
+    </style>
+
+    <style name="Ios.Widget.Light.ActionBar.Solid" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="displayOptions">showCustom|homeAsUp</item>
     </style>
 
     <style name="Ios.Animation.Activity" parent="android:Animation.Activity">
@@ -16,6 +32,10 @@
         <item name="android:activityOpenExitAnimation">@anim/ios_activity_open_exit</item>
         <item name="android:activityCloseEnterAnimation">@anim/ios_activity_close_enter</item>
         <item name="android:activityCloseExitAnimation">@anim/ios_activity_close_exit</item>
+    </style>
+
+    <style name="Ios.TextAppearance.Medium.Inverse" parent="@style/TextAppearance.AppCompat.Medium.Inverse">
+        <item name="android:textSize">17sp</item>
     </style>
 
 </resources>
