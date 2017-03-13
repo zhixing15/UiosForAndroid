@@ -17,7 +17,8 @@
         <item name="actionBarSize">44dp</item>
         <item name="actionBarStyle">@style/Ios.Widget.Light.ActionBar.Solid</item>
 
-        <item name="android:switchStyle">@style/Ios.Widget.Switch</item>
+        <!--SwitchCompat-->
+        <item name="switchStyle">@style/Ios.Widget.Switch</item>
         <!--<item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>-->
         <!--<item name="android:windowExitAnimation">@anim/abc_popup_exit</item>-->
         <!--<item name="listDividerAlertDialog">@drawable/abc_list_divider_mtrl_alpha</item>-->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <size android:height="@dimen/ios_abc_thumb_width" />
     <!-- 圆角弧度-->
     <corners android:radius="@dimen/ios_abc_switch_material" />
     <!-- 变化率 -->
